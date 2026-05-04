@@ -53,7 +53,6 @@
 </div>
 
 <script>
-// Login check
 document.getElementById("loginForm").addEventListener("submit", function(e){
     e.preventDefault();
 
@@ -71,8 +70,6 @@ document.getElementById("loginForm").addEventListener("submit", function(e){
         alert("Wrong email or password!");
     }
 });
-
-// Toggle password
 function togglePassword(id){
     const input = document.getElementById(id);
     input.type = input.type === "password" ? "text" : "password";
@@ -84,8 +81,6 @@ function togglePassword(id){
     </footer>
     <script>
     const btn = document.getElementById("theme-toggle");
-
-    // ضبط نص الزرار
     if (document.documentElement.classList.contains("light-mode")) {
         btn.textContent = "Dark Mode";
     }
