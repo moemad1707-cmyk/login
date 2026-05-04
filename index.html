@@ -66,7 +66,6 @@ document.getElementById("loginForm").addEventListener("submit", function(e){
 
     if(user){
         localStorage.setItem("loggedInUser", JSON.stringify(user));
-        alert("Welcome " + user.name + " 🏺");
         window.location.href = "home.html";
     } else {
         alert("Wrong email or password!");
